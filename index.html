@@ -1,65 +1,180 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Les Gîtes de [Naam]</title>
+
+<title>Les Gites du Soleil</title>
+
 <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
 <header>
-<h1>Les Gîtes de [Naam]</h1>
-<p>Welkom in onze gîtes in Frankrijk</p>
+
+<h1 data-nl="Les Gites du Soleil"
+    data-en="Holiday Gites in France"
+    data-fr="Gites de Vacances en France">
+Les Gites du Soleil
+</h1>
+
+<div class="language-switch">
+
+<button onclick="setLang('nl')">NL</button>
+<button onclick="setLang('en')">EN</button>
+<button onclick="setLang('fr')">FR</button>
+
+</div>
+
 </header>
 
 <section class="intro">
-<p>
-Geniet van rust, natuur en Franse charme in onze vier gîtes.
-Perfect voor gezinnen, koppels en wandelaars.
+
+<p data-nl="Geniet van rust en natuur in onze gites."
+   data-en="Enjoy peace and nature in our gites."
+   data-fr="Profitez du calme et de la nature dans nos gites.">
+
+Geniet van rust en natuur in onze gites.
+
 </p>
+
 </section>
+
 
 <section class="gites">
 
 <div class="gite">
-<img src="images/gite1.jpg" alt="Gite 1">
-<h2>Gîte Lavande</h2>
-<p>Gezellige gîte voor 4 personen met terras en uitzicht op de bergen.</p>
+
+<img src="images/gite1.jpg">
+
+<h2>Gite Lavande</h2>
+
+<p>4 personen • terras • uitzicht</p>
+
 </div>
 
 <div class="gite">
-<img src="images/gite2.jpg" alt="Gite 2">
-<h2>Gîte Olivier</h2>
-<p>Ruime gîte met privé tuin en barbecue.</p>
+
+<img src="images/gite2.jpg">
+
+<h2>Gite Olivier</h2>
+
+<p>4 personen • tuin • barbecue</p>
+
 </div>
 
 <div class="gite">
-<img src="images/gite3.jpg" alt="Gite 3">
-<h2>Gîte Soleil</h2>
-<p>Lichte gîte met zwembad toegang.</p>
+
+<img src="images/gite3.jpg">
+
+<h2>Gite Soleil</h2>
+
+<p>2 personen • zwembad</p>
+
 </div>
 
 <div class="gite">
-<img src="images/gite4.jpg" alt="Gite 4">
-<h2>Gîte Jardin</h2>
-<p>Rustige gîte vlak bij de natuur.</p>
+
+<img src="images/gite4.jpg">
+
+<h2>Gite Jardin</h2>
+
+<p>6 personen • familie gite</p>
+
 </div>
 
 </section>
 
-<section class="info">
-<h2>Informatie voor gasten</h2>
-<p>
-Handleiding voor gasten:
-<a href="handleiding.pdf" target="_blank">Bekijk hier</a>
-</p>
+
+<section class="gallery">
+
+<h2>Foto Galerij</h2>
+
+<div class="gallery-grid">
+
+<img src="images/gite1.jpg">
+<img src="images/gite2.jpg">
+<img src="images/gite3.jpg">
+<img src="images/gite4.jpg">
+
+</div>
+
 </section>
+
+
+<section class="calendar">
+
+<h2>Beschikbaarheid</h2>
+
+<table>
+
+<tr>
+<th>Week</th>
+<th>Status</th>
+</tr>
+
+<tr>
+<td>1–7 Juni</td>
+<td class="free">Vrij</td>
+</tr>
+
+<tr>
+<td>8–15 Juni</td>
+<td class="booked">Bezet</td>
+</tr>
+
+<tr>
+<td>16–23 Juni</td>
+<td class="free">Vrij</td>
+</tr>
+
+</table>
+
+</section>
+
+
+<section class="map">
+
+<h2>Locatie</h2>
+
+<iframe
+width="100%"
+height="350"
+src="https://maps.google.com/maps?q=provence&t=&z=8&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
+</section>
+
+
+<section class="contact">
+
+<h2>Contact</h2>
+
+<form>
+
+<input type="text" placeholder="Naam">
+
+<input type="email" placeholder="Email">
+
+<textarea placeholder="Bericht"></textarea>
+
+<button type="submit">Verstuur</button>
+
+</form>
+
+</section>
+
 
 <footer>
-<p>© 2026 Les Gîtes de [Naam]</p>
+
+<p>© 2026 Les Gites du Soleil</p>
+
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
