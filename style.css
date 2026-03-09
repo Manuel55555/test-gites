@@ -1,0 +1,59 @@
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background:#f5f5f5;
+}
+
+header{
+background:#6b8e23;
+color:white;
+text-align:center;
+padding:40px;
+}
+
+.intro{
+text-align:center;
+padding:30px;
+}
+
+.gites{
+display:grid;
+grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+gap:20px;
+padding:40px;
+}
+
+.gite{
+background:white;
+border-radius:8px;
+overflow:hidden;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+.gite img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.gite h2{
+padding:10px;
+margin:0;
+}
+
+.gite p{
+padding:0 10px 20px 10px;
+}
+
+.info{
+background:white;
+text-align:center;
+padding:40px;
+}
+
+footer{
+background:#333;
+color:white;
+text-align:center;
+padding:20px;
+}
